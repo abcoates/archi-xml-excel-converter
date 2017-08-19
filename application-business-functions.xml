@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.0/archimate3_Diagram.xsd" identifier="id-306bc760-438d-4cdf-b1ff-a11476e3dcd2">
+  <name xml:lang="en">application-business-functions</name>
+  <elements>
+    <element identifier="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="BusinessFunction">
+      <name xml:lang="en">L1 Business Function</name>
+      <documentation xml:lang="en">Documentation for L1 business function.&#xD;
+&#xD;
+Here is some further documentation.</documentation>
+    </element>
+    <element identifier="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="BusinessFunction">
+      <name xml:lang="en">L2 Business Function</name>
+    </element>
+    <element identifier="id-31aac30e-236a-4c08-81da-3eb009204d4e" xsi:type="BusinessFunction">
+      <name xml:lang="en">L3 Business Function</name>
+    </element>
+    <element identifier="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Application 1</name>
+      <documentation xml:lang="en">First application.&#xD;
+&#xD;
+Further documentation about first application.</documentation>
+    </element>
+    <element identifier="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Application 2</name>
+    </element>
+    <element identifier="id-8ae75738-9c08-401c-8730-899893cc86b7" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Application 3</name>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-d4bc505e-b326-47de-b807-7225078a930c" source="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" target="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="Specialization" />
+    <relationship identifier="id-b436aee0-aaff-459d-9ade-71c202a02027" source="id-31aac30e-236a-4c08-81da-3eb009204d4e" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Specialization" />
+    <relationship identifier="id-8c39b82c-f0c6-4187-9f67-61f774f370a3" source="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" target="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="Realization" />
+    <relationship identifier="id-f2936d89-984c-4a41-8046-90e937e7ceb5" source="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Realization" />
+    <relationship identifier="id-855de9e3-10da-4c7d-bed4-7e99e0c2ac62" source="id-8ae75738-9c08-401c-8730-899893cc86b7" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Realization" />
+    <relationship identifier="id-63416e10-615c-48eb-88bf-bb7fec09d499" source="id-8ae75738-9c08-401c-8730-899893cc86b7" target="id-31aac30e-236a-4c08-81da-3eb009204d4e" xsi:type="Realization" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item identifierRef="id-df026a90-372e-4928-9940-3402a6cbe955" />
+      <item identifierRef="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" />
+      <item identifierRef="id-31aac30e-236a-4c08-81da-3eb009204d4e" />
+    </item>
+    <item>
+      <label xml:lang="en">Application</label>
+      <item identifierRef="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" />
+      <item identifierRef="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" />
+      <item identifierRef="id-8ae75738-9c08-401c-8730-899893cc86b7" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item identifierRef="id-d4bc505e-b326-47de-b807-7225078a930c" />
+      <item identifierRef="id-b436aee0-aaff-459d-9ade-71c202a02027" />
+      <item identifierRef="id-8c39b82c-f0c6-4187-9f67-61f774f370a3" />
+      <item identifierRef="id-f2936d89-984c-4a41-8046-90e937e7ceb5" />
+      <item identifierRef="id-855de9e3-10da-4c7d-bed4-7e99e0c2ac62" />
+      <item identifierRef="id-63416e10-615c-48eb-88bf-bb7fec09d499" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierRef="id-2d6de4f1-f8ed-464f-b4ad-e6c322f3f228" />
+      <item identifierRef="id-b136c8f7-bdbf-498e-b921-d3a22e2dbb02" />
+      <item identifierRef="id-78a792e1-1daa-4556-b922-ad16f90d42a4" />
+    </item>
+  </organizations>
+  <views>
+    <diagrams>
+      <view identifier="id-2d6de4f1-f8ed-464f-b4ad-e6c322f3f228" xsi:type="Diagram">
+        <name xml:lang="en">Business Function Hierarchy</name>
+        <node identifier="id-b8cf3526-8ef3-4b9e-95bf-75baae0846df" elementRef="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="Element" x="74" y="50" w="407" h="239">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+          <node identifier="id-1c13d213-d4ae-448e-8e1a-58bc8240eb5b" elementRef="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Element" x="117" y="103" w="306" h="140">
+            <style>
+              <fillColor r="255" g="255" b="181" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+            <node identifier="id-7ca47a80-0940-4a3b-908d-4e0ee5000fbf" elementRef="id-31aac30e-236a-4c08-81da-3eb009204d4e" xsi:type="Element" x="163" y="155" w="219" h="55">
+              <style>
+                <fillColor r="255" g="255" b="181" />
+                <lineColor r="92" g="92" b="92" />
+              </style>
+            </node>
+          </node>
+        </node>
+        <connection identifier="id-d9de1388-cf8d-458f-8429-abaea2e7551c" relationshipRef="id-d4bc505e-b326-47de-b807-7225078a930c" xsi:type="Relationship" source="id-1c13d213-d4ae-448e-8e1a-58bc8240eb5b" target="id-b8cf3526-8ef3-4b9e-95bf-75baae0846df">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+        <connection identifier="id-ed73c634-b5b6-4595-aace-bb3f5a194a50" relationshipRef="id-b436aee0-aaff-459d-9ade-71c202a02027" xsi:type="Relationship" source="id-7ca47a80-0940-4a3b-908d-4e0ee5000fbf" target="id-1c13d213-d4ae-448e-8e1a-58bc8240eb5b">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+      </view>
+      <view identifier="id-b136c8f7-bdbf-498e-b921-d3a22e2dbb02" xsi:type="Diagram">
+        <name xml:lang="en">Applications</name>
+        <node identifier="id-d773054e-544a-4755-b94a-eab2c79780ca" elementRef="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" xsi:type="Element" x="190" y="78" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-ae1f62bd-94dc-4928-93ab-e3eb8b582ba3" elementRef="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" xsi:type="Element" x="190" y="156" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-75fbca44-6fc5-4c42-a96e-49c8f930ac0b" elementRef="id-8ae75738-9c08-401c-8730-899893cc86b7" xsi:type="Element" x="190" y="240" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </view>
+      <view identifier="id-78a792e1-1daa-4556-b922-ad16f90d42a4" xsi:type="Diagram">
+        <name xml:lang="en">Application - Business Function Mappings</name>
+        <node identifier="id-decf6d06-0dad-4900-9fca-e52cec1b1aae" elementRef="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" xsi:type="Element" x="105" y="65" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-c69472f5-5212-4ee5-a9a7-bee894cb2c76" elementRef="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="Element" x="432" y="65" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-4e671d5f-9fcc-4d16-ae05-c1990bc8b729" elementRef="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" xsi:type="Element" x="105" y="168" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-ab5d00bc-73bd-491f-8c0b-6be4c452cf17" elementRef="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Element" x="432" y="168" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-44b3e61d-0c94-4182-bac0-872da882e257" elementRef="id-8ae75738-9c08-401c-8730-899893cc86b7" xsi:type="Element" x="105" y="276" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-51fe7c7a-a3a0-4a9b-8326-13037abca2f6" elementRef="id-31aac30e-236a-4c08-81da-3eb009204d4e" xsi:type="Element" x="432" y="276" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <connection identifier="id-bab9ae42-d4f6-4ce1-8b0c-da75eb721d86" relationshipRef="id-8c39b82c-f0c6-4187-9f67-61f774f370a3" xsi:type="Relationship" source="id-decf6d06-0dad-4900-9fca-e52cec1b1aae" target="id-c69472f5-5212-4ee5-a9a7-bee894cb2c76">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+        <connection identifier="id-61c48742-b6cd-4fc5-abcf-ed6c4d0371db" relationshipRef="id-f2936d89-984c-4a41-8046-90e937e7ceb5" xsi:type="Relationship" source="id-4e671d5f-9fcc-4d16-ae05-c1990bc8b729" target="id-ab5d00bc-73bd-491f-8c0b-6be4c452cf17">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+        <connection identifier="id-c11e8012-2f64-43b4-9bcb-c5c788a67661" relationshipRef="id-d4bc505e-b326-47de-b807-7225078a930c" xsi:type="Relationship" source="id-ab5d00bc-73bd-491f-8c0b-6be4c452cf17" target="id-c69472f5-5212-4ee5-a9a7-bee894cb2c76">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+        <connection identifier="id-c7e9033a-d9e0-47d4-879c-1ae8ba103504" relationshipRef="id-855de9e3-10da-4c7d-bed4-7e99e0c2ac62" xsi:type="Relationship" source="id-44b3e61d-0c94-4182-bac0-872da882e257" target="id-ab5d00bc-73bd-491f-8c0b-6be4c452cf17">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+        <connection identifier="id-6f471a3c-2073-4de8-99e8-f3f8e57bc14a" relationshipRef="id-63416e10-615c-48eb-88bf-bb7fec09d499" xsi:type="Relationship" source="id-44b3e61d-0c94-4182-bac0-872da882e257" target="id-51fe7c7a-a3a0-4a9b-8326-13037abca2f6">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+        <connection identifier="id-8fc1da46-62c8-4260-8073-2df725f88bf6" relationshipRef="id-b436aee0-aaff-459d-9ade-71c202a02027" xsi:type="Relationship" source="id-51fe7c7a-a3a0-4a9b-8326-13037abca2f6" target="id-ab5d00bc-73bd-491f-8c0b-6be4c452cf17">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+          </style>
+        </connection>
+      </view>
+    </diagrams>
+  </views>
+</model>
