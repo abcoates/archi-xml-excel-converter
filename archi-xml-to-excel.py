@@ -18,7 +18,7 @@ def elemtext(e):
 
 xsitype = makecurie(ns, 'xsi', 'type')
 
-# Read the file stem(s) from the command-line.
+# Read the file paths from the command-line.
 xmlInputPath = sys.argv[1]
 excelOutputPath = sys.argv[2]
 

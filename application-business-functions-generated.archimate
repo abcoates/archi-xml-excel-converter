@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="application-business-functions" id="id-306bc760-438d-4cdf-b1ff-a11476e3dcd2" version="4.0.0">
+  <folder name="Strategy" id="157ff4c9-72c8-4806-b555-263d4cdae1d8" type="strategy"/>
+  <folder name="Business" id="889f2bbe-13c6-4eb1-b6c6-512113b1394b" type="business">
+    <element xsi:type="archimate:BusinessFunction" name="L1 Business Function" id="id-df026a90-372e-4928-9940-3402a6cbe955">
+      <documentation>Documentation for L1 business function.
+
+Here is some further documentation.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="L2 Business Function" id="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
+    <element xsi:type="archimate:BusinessFunction" name="L3 Business Function" id="id-31aac30e-236a-4c08-81da-3eb009204d4e"/>
+  </folder>
+  <folder name="Application" id="984c327a-1564-4d80-ba9a-70ad89fe1a72" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Application 1" id="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13">
+      <documentation>First application.
+
+Further documentation about first application.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Application 2" id="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Application 3" id="id-8ae75738-9c08-401c-8730-899893cc86b7"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="3090716b-3509-4734-b997-460b30e857f1" type="technology"/>
+  <folder name="Motivation" id="54e13d0b-43f5-4bbd-948b-b9b8b2b84180" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="40fd2ae3-0141-4999-a8d7-ca9ad43f8851" type="implementation_migration"/>
+  <folder name="Other" id="f5c90780-822d-46e2-a072-e50b7fe03d9c" type="other"/>
+  <folder name="Relations" id="5b2742e4-930c-4393-b8eb-4ef35e317777" type="relations">
+    <element xsi:type="archimate:SpecializationRelationship" id="id-d4bc505e-b326-47de-b807-7225078a930c" source="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" target="id-df026a90-372e-4928-9940-3402a6cbe955"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="id-b436aee0-aaff-459d-9ade-71c202a02027" source="id-31aac30e-236a-4c08-81da-3eb009204d4e" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-8c39b82c-f0c6-4187-9f67-61f774f370a3" source="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" target="id-df026a90-372e-4928-9940-3402a6cbe955"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-f2936d89-984c-4a41-8046-90e937e7ceb5" source="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-855de9e3-10da-4c7d-bed4-7e99e0c2ac62" source="id-8ae75738-9c08-401c-8730-899893cc86b7" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-63416e10-615c-48eb-88bf-bb7fec09d499" source="id-8ae75738-9c08-401c-8730-899893cc86b7" target="id-31aac30e-236a-4c08-81da-3eb009204d4e"/>
+  </folder>
+  <folder name="Views" id="739ab887-55e5-4a23-90d3-7d0809f77931" type="diagrams"/>
+</archimate:model>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model 
+    xmlns="http://www.opengroup.org/xsd/archimate/3.0/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="id-306bc760-438d-4cdf-b1ff-a11476e3dcd2" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.0/archimate3_Diagram.xsd">
+    <name xml:lang="en">application-business-functions</name>
+    <elements>
+        <element identifier="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="BusinessFunction">
+            <name xml:lang="en">L1 Business Function</name>
+            <documentation xml:lang="en">Documentation for L1 business function.
+
+Here is some further documentation.</documentation>
+        </element>
+        <element identifier="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="BusinessFunction">
+            <name xml:lang="en">L2 Business Function</name>
+        </element>
+        <element identifier="id-31aac30e-236a-4c08-81da-3eb009204d4e" xsi:type="BusinessFunction">
+            <name xml:lang="en">L3 Business Function</name>
+        </element>
+        <element identifier="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" xsi:type="ApplicationComponent">
+            <name xml:lang="en">Application 1</name>
+            <documentation xml:lang="en">First application.
+
+Further documentation about first application.</documentation>
+        </element>
+        <element identifier="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" xsi:type="ApplicationComponent">
+            <name xml:lang="en">Application 2</name>
+        </element>
+        <element identifier="id-8ae75738-9c08-401c-8730-899893cc86b7" xsi:type="ApplicationComponent">
+            <name xml:lang="en">Application 3</name>
+        </element>
+    </elements>
+    <relationships>
+        <relationship identifier="id-d4bc505e-b326-47de-b807-7225078a930c" source="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" target="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="Specialization" />
+        <relationship identifier="id-b436aee0-aaff-459d-9ade-71c202a02027" source="id-31aac30e-236a-4c08-81da-3eb009204d4e" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Specialization" />
+        <relationship identifier="id-8c39b82c-f0c6-4187-9f67-61f774f370a3" source="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" target="id-df026a90-372e-4928-9940-3402a6cbe955" xsi:type="Realization" />
+        <relationship identifier="id-f2936d89-984c-4a41-8046-90e937e7ceb5" source="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Realization" />
+        <relationship identifier="id-855de9e3-10da-4c7d-bed4-7e99e0c2ac62" source="id-8ae75738-9c08-401c-8730-899893cc86b7" target="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" xsi:type="Realization" />
+        <relationship identifier="id-63416e10-615c-48eb-88bf-bb7fec09d499" source="id-8ae75738-9c08-401c-8730-899893cc86b7" target="id-31aac30e-236a-4c08-81da-3eb009204d4e" xsi:type="Realization" />
+    </relationships>
+    <organizations>
+        <item>
+            <label xml:lang="en">Strategy</label>
+        </item>
+        <item>
+            <label xml:lang="en">Business</label>
+            <item identifierRef="id-df026a90-372e-4928-9940-3402a6cbe955" />
+            <item identifierRef="id-17d58b02-fdec-4b8b-a8b1-34e43632db5a" />
+            <item identifierRef="id-31aac30e-236a-4c08-81da-3eb009204d4e" /></item>
+        <item>
+            <label xml:lang="en">Application</label>
+            <item identifierRef="id-52ae7cea-9110-4e0a-92f2-de50f02bcd13" />
+            <item identifierRef="id-5a2f4550-b9d8-4cf1-9ef7-745392b4464e" />
+            <item identifierRef="id-8ae75738-9c08-401c-8730-899893cc86b7" /></item>
+        <item>
+            <label xml:lang="en">Technology &amp; Physical</label>
+        </item>
+        <item>
+            <label xml:lang="en">Motivation</label>
+        </item>
+        <item>
+            <label xml:lang="en">Implementation &amp; Migration</label>
+        </item>
+        <item>
+            <label xml:lang="en">Other</label>
+        </item>
+        <item>
+            <label xml:lang="en">Relations</label>
+            <item identifierRef="id-d4bc505e-b326-47de-b807-7225078a930c" />
+            <item identifierRef="id-b436aee0-aaff-459d-9ade-71c202a02027" />
+            <item identifierRef="id-8c39b82c-f0c6-4187-9f67-61f774f370a3" />
+            <item identifierRef="id-f2936d89-984c-4a41-8046-90e937e7ceb5" />
+            <item identifierRef="id-855de9e3-10da-4c7d-bed4-7e99e0c2ac62" />
+            <item identifierRef="id-63416e10-615c-48eb-88bf-bb7fec09d499" /></item>
+    </organizations>
+</model>
