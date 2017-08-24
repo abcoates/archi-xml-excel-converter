@@ -1,9 +1,14 @@
 # archi-xml-excel-converter
 XML &lt;--> Excel conversion scripts for 'Archi' Archimate models.
 
+## Note
+The Archi tool has a facility to export a model to a set of 3 CSV files, and to create a new model based
+on a similar set of 3 CSV files.  For many people, that will be more convenient than the scripts described below.  However, if you would prefer to use a single Excel file rather than 3 CSV files, then
+you might find some value in the scripts described below.
+
 ## Description
-Archi (https://archimatetool.com/) is an open-source Archimate modelling tool.  It has its own file format,
-but it can also import/export models using XML.
+Archi (https://archimatetool.com/) is an open-source Archimate modelling tool.  It has its own file
+format, but it can also import/export models using XML.
 
 This project provides two convenience scripts written in Python 3 - one to transform the XML into Excel,
 and the other to convert Excel into XML.  These scripts do not round trip - only some of the information
