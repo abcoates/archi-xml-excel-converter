@@ -27,7 +27,9 @@ Further documentation about first application.&#xD;
   <folder name="Relations" id="ab85202b-78f7-40dd-863f-dee518b88fb8" type="relations">
     <element xsi:type="archimate:SpecializationRelationship" id="d4bc505e-b326-47de-b807-7225078a930c" source="17d58b02-fdec-4b8b-a8b1-34e43632db5a" target="df026a90-372e-4928-9940-3402a6cbe955"/>
     <element xsi:type="archimate:SpecializationRelationship" id="b436aee0-aaff-459d-9ade-71c202a02027" source="31aac30e-236a-4c08-81da-3eb009204d4e" target="17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
-    <element xsi:type="archimate:RealizationRelationship" id="8c39b82c-f0c6-4187-9f67-61f774f370a3" source="52ae7cea-9110-4e0a-92f2-de50f02bcd13" target="df026a90-372e-4928-9940-3402a6cbe955"/>
+    <element xsi:type="archimate:RealizationRelationship" name="implements business function" id="8c39b82c-f0c6-4187-9f67-61f774f370a3" source="52ae7cea-9110-4e0a-92f2-de50f02bcd13" target="df026a90-372e-4928-9940-3402a6cbe955">
+      <documentation>Application 1 implements the business function 'L1 Business Function'.</documentation>
+    </element>
     <element xsi:type="archimate:RealizationRelationship" id="f2936d89-984c-4a41-8046-90e937e7ceb5" source="5a2f4550-b9d8-4cf1-9ef7-745392b4464e" target="17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
     <element xsi:type="archimate:RealizationRelationship" id="855de9e3-10da-4c7d-bed4-7e99e0c2ac62" source="8ae75738-9c08-401c-8730-899893cc86b7" target="17d58b02-fdec-4b8b-a8b1-34e43632db5a"/>
     <element xsi:type="archimate:RealizationRelationship" id="63416e10-615c-48eb-88bf-bb7fec09d499" source="8ae75738-9c08-401c-8730-899893cc86b7" target="31aac30e-236a-4c08-81da-3eb009204d4e"/>
