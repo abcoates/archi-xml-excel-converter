@@ -50,7 +50,7 @@ with open(mdOutputPath, mode='w', encoding='utf-8') as mdout:
 		elemtype = camelCaseRegex.sub(r"\1 \2", element.attrib[xsitype])
 		elemid = element.attrib['identifier']
 		mdout.writelines([
-			"## <a name='{0}'></a>**{1}:** {2}\n".format(elemid, elemtype, elemtext(element.find('m:name',ns))),
+			"## <a name='{0}'></a>{1}: {2}\n".format(elemid, elemtype, elemtext(element.find('m:name',ns))),
 			"| Property | Value |\n",
 			"| ---- | ---- |\n",
 			"| **Name** | {0} |\n".format(elemtext(element.find('m:name',ns))),
@@ -71,23 +71,12 @@ with open(mdOutputPath, mode='w', encoding='utf-8') as mdout:
 				target = root.findall("m:elements/m:element[@identifier='%s']" % targetid, ns)[0]
 				targettype = camelCaseRegex.sub(r"\1 \2", target.attrib[xsitype])
 				mdout.write(
-					"| {0} | {1} | {2} | {3} | {4} |\n".format(
+					"| {0} | {1} | [{2}]({3}) | {4} | {5} |\n".format(
 						relntype,
 						elemtext(relationship.find('m:name',ns)),
 						elemtext(target.find('m:name',ns)),
+						"#%s" % targetid,
 						targettype,
 						escapetext(elemtext(relationship.find('m:documentation',ns)))
 					)
 				)
-				
-
-	# Write out relationship properties sheet.
-#	relationshipcolumns = ['relationship_type', 'relationship_identifier', 'relationship_source_identifier', 'relationship_target_identifier']
-#	relationships = root.findall('m:relationships/m:relationship', ns)
-#	relationshipsdf = pd.DataFrame({
-#		'relationship_type': list(map(lambda e: e.attrib[xsitype], relationships)),
-#		'relationship_identifier': list(map(lambda e: e.attrib['identifier'], relationships)),
-#		'relationship_source_identifier': list(map(lambda e: e.attrib['source'], relationships)),
-#		'relationship_target_identifier': list(map(lambda e: e.attrib['target'], relationships))
-#	})
-#	relationshipsdf.to_excel(writer, sheet_name='relationships', columns=relationshipcolumns, index=False)
